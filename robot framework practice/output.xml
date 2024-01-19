@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231218 14:36:57.908" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo6" source="d:\seperate\robot framework practice\practice5\demo6.robot">
+<test id="s1-t1" name="validate successful login" line="38">
+<kw name="opening browser with an application" library="resource5" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231218 14:36:58.128" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<status status="PASS" starttime="20231218 14:36:58.128" endtime="20231218 14:36:59.708"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231218 14:36:59.708" endtime="20231218 14:36:59.872"/>
+</kw>
+<status status="PASS" starttime="20231218 14:36:58.128" endtime="20231218 14:36:59.873"/>
+</kw>
+<kw name="Fill login form">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${uname}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231218 14:36:59.874" level="INFO">Typing text 'rahulshettyacademy' into text field 'xpath = //*[@id='username']'.</msg>
+<status status="PASS" starttime="20231218 14:36:59.874" endtime="20231218 14:37:00.020"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${pwd}</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231218 14:37:00.020" level="INFO">Typing password into text field 'xpath = //*[@id='password']'.</msg>
+<msg timestamp="20231218 14:37:00.069" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231218 14:37:00.122" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231218 14:37:00.020" endtime="20231218 14:37:00.122"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${radio_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231218 14:37:00.122" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<status status="PASS" starttime="20231218 14:37:00.122" endtime="20231218 14:37:00.167"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231218 14:37:00.167" endtime="20231218 14:37:00.459"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${alert}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231218 14:37:00.459" level="INFO">Clicking button 'xpath = //*[@id='okayBtn']'.</msg>
+<status status="PASS" starttime="20231218 14:37:00.459" endtime="20231218 14:37:00.518"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${alert}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231218 14:37:00.518" level="INFO">Clicking button 'xpath = //*[@id='okayBtn']'.</msg>
+<status status="PASS" starttime="20231218 14:37:00.518" endtime="20231218 14:37:00.568"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20231218 14:37:00.568" endtime="20231218 14:37:00.885"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${drop_down}</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20231218 14:37:00.885" level="INFO">Selecting options from selection list 'css:select.form-control' by value teach.</msg>
+<status status="PASS" starttime="20231218 14:37:00.885" endtime="20231218 14:37:00.949"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20231218 14:37:00.949" level="INFO">Selecting checkbox 'id:terms'.</msg>
+<status status="PASS" starttime="20231218 14:37:00.949" endtime="20231218 14:37:01.017"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231218 14:37:01.017" level="INFO">Clicking button 'xpath = //*[@id='signInBtn']'.</msg>
+<status status="PASS" starttime="20231218 14:37:01.017" endtime="20231218 14:37:01.067"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btns}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231218 14:37:01.067" endtime="20231218 14:37:04.498"/>
+</kw>
+<status status="PASS" starttime="20231218 14:36:59.874" endtime="20231218 14:37:04.498"/>
+</kw>
+<status status="PASS" starttime="20231218 14:36:58.128" endtime="20231218 14:37:04.498"/>
+</test>
+<status status="PASS" starttime="20231218 14:36:57.912" endtime="20231218 14:37:04.498"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo6">Demo6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
